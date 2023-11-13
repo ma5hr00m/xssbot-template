@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="ma5hr00m">
+  <meta name="description" content="basic xssBot template">
+  <title>Show</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Show your word to the admin.</h1>
+  <button onclick="triggerBot()">Trigger Bot</button>
+  <script>
+    function triggerBot() {
+      $.post("/triggerBot", function(data, status){
+        alert("Bot will visit /show route in 10 seconds");
+      });
+    }
+  </script>
+</body>
+</html>
